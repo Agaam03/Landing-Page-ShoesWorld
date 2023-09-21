@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,900;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Alert -->
+    <div class="alert">
+        <div class="container">
+            <p class="alert-text">Free Shipping On Indonesia Orders Rp 300.000+</p>
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <header class="header">
+        <nav class="top">
+            <div class="container">
+                <div class="search-box">
+                    <input type="search" placeholder="Search Product" class="searchInput text-logo">
+                    <i class='bx bxs-search bx-tada searchIcon' style='color:#000000'></i>
+                </div>
+                <div class="logo text-logo">
+                    <a href="#">SHOESWORLD</a>
+                </div>
+                <div class="icon cart">
+                    <a href="#"> <i class='bx bx-cart' style='color:#000000'></i></a>
+                    <a href="#"><i class='bx bx-heart' style='color:#000000'></i></a>
+                    <a href="#" id="show-login"><i class='bx bxs-user ' style='color:#000000'></i></a>
+                </div>
+            </div>
+        </nav>
+        <nav class="down">
+            <div class="containerBottom">
+                <ul class="navList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Offer</a></li>
+                    <li><a href="https://skilvul.com"><acronym title="Skilvul">Blog</acronym></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION HERO -->
+
+    <section>
+        <div class="content">
+            <div class="text">
+                <h2 class="h1 hero-title">
+                    New Products
+                </h2>
+                <h2 class=" hero-title"><strong>Shoes Collection</strong></h2>
+                <p id="description" class="hero-text">
+                    Inspirasi Mode Terkini: Jangan lewatkan inspirasi dari dunia mode terkini. Jadilah yang pertama
+                    untuk mengikuti tren.
+                </p>
+                <a href="#" class="btnHeader ">Explore Menu <i class='bx bxs-right-arrow'></i> </a>
+                <a href="#" class="btnHeader2 ">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION COLLECTION -->
+
+    <section class="section collection">
+        <div class="container">
+            <div class="collection-card"
+                style="background-image: url(img/collection-2-removebg-preview.png); background-color: rgb(36, 32, 32); color:white;">
+                <h3>Men Collection</h3>
+                <a href="#" class="btn btn-secondary btnCard">
+                    <span>Explore All</span>
+
+                    <i class='bx bx-right-arrow-alt bx-tada'></i>
+                </a>
+            </div>
+
+            <div class="collection-card women"
+                style="background-image: url(img/collection-1-removebg-preview.png); background-color: rgb(88, 81, 81); color: white">
+                <h3>Women Collection</h3>
+                <a href="#" class="btn btn-secondary btnCard">
+                    <span>Explore All</span>
+
+                    <i class='bx bx-right-arrow-alt bx-tada'></i>
+                </a>
+            </div>
+
+            <div class="collection-card"
+                style="background-image: url(img/collection-3-removebg-preview.png); background-color: rgb(36, 32, 32); color:white;">
+                <h3>Sport Collection</h3>
+                <a href="#" class="btn btn-secondary btnCard">
+                    <span>Explore All</span>
+
+                    <i class='bx bx-right-arrow-alt bx-tada'></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION PRODUCT -->
+    <section class="section product">
+        <div class="container">
+            <h2 class="h2 section-title">Bestsellers Products</h2>
+
+            <ul class="filter-list">
+                <li><button class="filter-btn active">All</button></li>
+                <li><button class="filter-btn">Nike</button></li>
+                <li><button class="filter-btn">Adidas</button></li>
+                <li><button class="filter-btn">Puma</button></li>
+                <li><button class="filter-btn">Bata</button></li>
+                <li><button class="filter-btn">Apex</button></li>
+            </ul>
+
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="product-card">
+                        <figure class="card-banner">
+                            <img src="img/p1.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <div class="card-badge">New</div>
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Women</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Running Sneaker Shoes</a>
+                            </h3>
+
+                            <data class="card-price" value="180.85">Rp. 2.500.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <div class="product-card" tabindex="0">
+                        <figure class="card-banner" style="background-color: rgb(36, 32, 32)">
+                            <img src="img/p2.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Sports</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Leather Mens Slipper</a>
+                            </h3>
+
+                            <data class="card-price" value="1.500.000">Rp1.500.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <div class="product-card" tabindex="0">
+                        <figure class="card-banner">
+                            <img src="img/p3.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <div class="card-badge">New</div>
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Women</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Simple Fabric Shoe</a>
+                            </h3>
+
+                            <data class="card-price" value="2.700.000">Rp. 2.700.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <div class="product-card" tabindex="0">
+                        <figure class="card-banner" style="background-color: rgb(36, 32, 32)">
+                            <img src="img/p4.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <div class="card-badge">-25%</div>
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Sports</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Air Jordan 7 Retro</a>
+                            </h3>
+
+                            <data class="card-price" value="1.500.000"><del>Rp2.700.000</del> Rp.2.025.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+
+
+            </ul>
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="product-card" tabindex="0">
+                        <figure class="card-banner" style="background-color: rgb(36, 32, 32)">
+                            <img src="img/p5.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Women</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Nike Air Max 270 SE</a>
+                            </h3>
+
+                            <data class="card-price" value="1.500.000">Rp1.500.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <div class="product-card" tabindex="0">
+                        <figure class="card-banner">
+                            <img src="img/p6.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <div class="card-badge">-25%</div>
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Sports</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Adidas Sneakers Shoes</a>
+                            </h3>
+
+                            <data class="card-price" value="1.500.000"><del>Rp2.700.000</del> Rp.2.025.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <div class="product-card" tabindex="0">
+                        <figure class="card-banner" style="background-color: rgb(36, 32, 32)">
+                            <img src="img/p7.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Sports</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Simple Fabric Shoe</a>
+                            </h3>
+
+                            <data class="card-price" value="1.500.000">Rp1.500.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="product-item">
+                    <div class="product-card" tabindex="0">
+                        <figure class="card-banner">
+                            <img src="img/p8.png" alt="Running Sneaker Shoes" width="312" height="350"
+                                class="image-contain">
+
+                            <div class="card-badge">-25%</div>
+
+                            <ul class="card-action-list">
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-cart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bx-heart bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                                <li class="card-action-item">
+                                    <button class="card-action-btn">
+                                        <i class='bx bxs-search bx-tada' style="color: white;"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-cat">
+                                <a href="#" class="card-cat-link">Men</a> /
+                                <a href="#" class="card-cat-link">Sports</a>
+                            </div>
+
+                            <h3 class="h3 card-title">
+                                <a href="#">Nike Basketball shoes</a>
+                            </h3>
+
+                            <data class="card-price" value="1.500.000"><del>Rp2.700.000</del> Rp.2.025.000</data>
+
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- SECTION CTA -->
+
+    <section class="section cta">
+        <div class="container">
+
+            <ul class="list-cta">
+                <li>
+                    <div class="cta-card" style="background-image: url(img/cta-1.jpg);">
+                        <p class="card-info">Casual Shoes</p>
+                        <h3 class="card-title">
+                            The Holiday Sale Off 50%
+                        </h3>
+
+                        <a href="#" class="btn-cta">
+                            <span>Shop Now</span>
+
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cta-card" style="background-image: url(img/cta-2.jpg);">
+                        <p class="card-info">Nike Shoes</p>
+                        <h3 class="card-title">
+                            Stay Active and Be Awesome
+                        </h3>
+
+                        <a href="#" class="btn-cta">
+                            <span>Shop Now</span>
+
+                            <i class='bx bx-right-arrow-alt bx-tada'></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="judul">
+            <p>SHOESWORLD</p>
+        </div>
+        <div class="container">
+            <div class="contact">
+                <ul class="footer-list">
+                    <li class="title">Contact Us</li>
+                    <li class="alamat footer-item">
+
+                        <i class='bx bxs-location-plus bx-tada'></i>
+
+                        <span>Jl. Basuki Rahmat NO 231, Jakarta, Indonesia</span>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#">
+                            <i class='bx bxs-phone bx-tada'></i>
+                            <span>+620883192300</span>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#">
+                            <i class='bx bxs-envelope bx-tada'></i>
+                            <span class="footer-item">
+                                shoesworld@gmail.com
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about">
+                <ul class="footer-list">
+                    <li class="title">About</li>
+                    <li class="footer-item">
+                        <a href="#">
+                            <i class='bx bx-chevron-right bx-flashing'></i>
+                            <span class="footer-item">
+                                FAQ
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#">
+                            <i class='bx bx-chevron-right bx-flashing'></i>
+                            <span class="footer-item">
+                                About Us
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#">
+                            <i class='bx bx-chevron-right bx-flashing'></i>
+                            <span class="footer-item">
+                                Size Guide
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#">
+                            <i class='bx bx-chevron-right bx-flashing'></i>
+                            <span class="footer-item">
+                                New Products
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="opening">
+                <table class="footer-table">
+                    <p class="title">
+                        Opening Time
+                    </p>
+                    <tbody>
+                        <tr class="table-row">
+                            <th>Mon - Tue:</th>
+                            <td>8AM - 10PM</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>Wed:</th>
+                            <td>8AM - 7PM</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>Fri:</th>
+                            <td>7AM - 12AM</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>Sat:</th>
+                            <td>9AM - 8PM</td>
+                        </tr>
+                        <tr class="table-row">
+                            <th>Sun:</th>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="subscribe">
+                <p class="title">Newsletter</p>
+
+                <p class="newsletter-text">
+                    Authoritatively morph 24/7 potentialities with error-free partnerships.
+                </p>
+
+                <form action="" class="newslatter-form">
+                    <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+                    <button type="submit" class="btnLetter">Subscribe</button>
+                </form>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <footer class="copyright">
+        <div class="copy">
+
+            <p class="copyright">
+                &copy; 2023 <a href="https://skilvul.com" id="link" class="copyright-link">Agaam</a>. All Rights
+                Reserved
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- POP UP REGISTRATION -->
+
+    <article class="popUp">
+        <div class="container">
+            <div class="close-btn"><i class='bx bx-x'></i></div>
+            <div class="judul">
+                <h2>Registration</h2>
+            </div>
+            <form action="#" id="myForm">
+
+                <div class="form">
+                    <div class="form-element">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" placeholder="Masukkan Nama Anda">
+                    </div>
+                    <div class="form-element">
+                        <label for="city">Kota</label>
+                        <input type="text" id="city" placeholder="Masukkan Kota Anda">
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Masukkan Email Anda">
+                    </div>
+                    <div class="form-element">
+                        <label for="zip-code">Kode Pos</label>
+                        <input type="number" id="zip-code" placeholder="Masukkan Kode Pos Anda">
+                    </div>
+                    <div class="form-element">
+                        <input type="checkbox" id="status">
+                        <label for="check" id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah
+                            benar dan telah sesuai</label>
+                    </div>
+                    <div class="form-element">
+                        <button type="submit " id="submit-form">Submit</button>
+                    </div>
+                    <div id="warning"></div>
+                </div>
+            </form>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

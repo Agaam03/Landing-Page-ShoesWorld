@@ -1,0 +1,593 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+:root{
+   /**
+    * typography
+    */
+   
+   --ff-roboto: 'Roboto', sans-serif;
+   --ff-josefin-sans: 'Josefin Sans', sans-serif;
+ 
+   --fs-1: 3rem;
+   --fs-2: 2.6rem;
+   --fs-3: 2.2rem;
+   --fs-4: 2rem;
+   --fs-5: 1.8rem;
+   --fs-6: 1.6rem;
+   --fs-7: 1.4rem;
+   --fs-8: 1.2rem;
+ 
+   --fw-300: 300;
+   --fw-500: 500;
+   --fw-600: 600;
+   --fw-700: 700;
+ 
+/**
+   * transition
+    */
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.17);
+    z-index: 999;
+}
+
+/*-----------------ALERT---------------- */
+
+
+.alert >.container{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.alert-text{
+    padding: 5px;
+    color: white;
+}
+
+/*-----------------NAV TOP---------------- */
+
+.top > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 7px 25px;
+    transition:all .50s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    padding-right: 45px;
+    font-weight: 500;
+}
+
+/*-----------------SEARCH BOX---------------- */
+.search-box{
+    display: flex;
+    align-items: center;    
+    border: 0.9px gray solid;
+    background-color:rgb(255, 255, 255);
+    padding: 9px 9px;
+    border-radius: 5px;
+}
+.searchIcon{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+::placeholder{
+    font-size: 12px;
+    color: black;
+}
+.search-box input[type="search"]{
+    font-weight: 200;
+    font-size: 12px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+/*-----------------ICON LOGIN WHISLIST---------------- */
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 30px;
+}
+
+
+/*-----------------NAV BOTTOM---------------- */
+.containerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 30px;
+
+}
+.navList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding: 0px;
+    font-weight:400;
+    list-style:none;
+}
+
+
+/*-----------------SECTION---------------- */
+
+section > .content{
+    background-image: url(img/Picsart_23-09-18_09-48-39-613.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.content > .text{
+    position: absolute;
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.hero-title{
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+
+}
+
+.hero-text{
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+}
+.btnHeader{
+    margin-top: 10px;
+    position: absolute;
+    padding: 10px 15px;
+    background:white;
+    color: rgb(0, 0, 0);
+    font-size: 500;
+    letter-spacing: 1px;
+    border-radius: 1rem;
+    transition: all .50s ease;
+}
+.btnHeader i{
+    vertical-align: middle;
+    margin-left: 6px;
+    font-size: 22px;
+}
+.btnHeader:hover{
+    background:white;
+    color: rgb(0, 0, 0);
+    box-shadow: #ffffff 0px 1px 25px;
+}
+.btnHeader2 {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 18px;
+    font-size:500;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 3px solid white;
+    color:white;
+    transition: all .50s ease;
+}
+/*-----------------SECTION CARD COLLECTION---------------- */
+
+.collection > .container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.collection-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: black 1px solid;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 30px 15px;
+
+}
+
+.collection-card > h3{
+    font-weight: 500;
+}
+.btnCard{
+    border: 0.4px rgb(255, 255, 255) solid;
+    padding: 6px 10px;
+    color: white;
+}
+.btnCard > i{
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+/*-----------------SECTION CARD PRODUCTS---------------- */
+
+.product .section-title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.filter-btn {
+    color:black;
+    background: #dbc0c0;
+    padding: 10px 16px;
+    border-radius: 30px;
+}
+
+.filter-btn.active {
+    color: black;
+    background: #5e5151;
+}
+
+/*-----------------SECTION CARD MAIN---------------- */
+
+.product-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+
+}
+
+.product-list > li{
+    list-style-type: none;
+}
+
+.card-banner {
+    background: rgb(88, 81, 81);
+    position: relative;
+    width: 290px;
+    height: 300px;
+    overflow: hidden;
+  }
+.image-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: var(--transition-2);
+}
+.product-card:is(:hover, :focus) .image-contain { 
+    transform: scale(1.1); 
+}
+.card-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    color: black;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 25px;
+}
+.card-action-list {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    opacity: 0;
+    transition: var(--transition-1);
+    list-style-type: none;
+}
+.product-card:is(:hover, :focus) .card-action-list {
+    right: 20px;
+    opacity: 1;
+}
+.card-action-item { 
+    position: relative;
+ }
+.card-action-btn {
+    background: black;
+    font-size: 18px;
+    margin: 3px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: var(--transition-1);
+}
+
+.card-action-btn:is(:hover, :focus) {
+    background: #dbc0c0;
+    color: black;
+}
+.card-content {
+    padding: 6px 15px 0;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.card-cat {
+    color: black;
+    margin-bottom: 3px;
+}
+  
+.card-cat-link {
+    display: inline-block;
+    color: inherit;
+    transition: var(--transition-1);
+}
+.card-cat-link:is(:hover, :focus) { color: var(--bittersweet); }
+
+.product-card .card-title { 
+    margin-bottom: 6px; 
+    font-family: var(--ff-roboto);
+}
+
+.product-card .card-title > a {
+  color:black;
+  transition: var(--transition-1);
+}
+
+.product-card .card-title > a:is(:hover, :focus) { color:rgb(167, 160, 153); }
+
+.card-price {
+    color: black;
+    font-family: var(--ff-roboto);
+    font-weight: var(--fw-600);
+}
+
+.card-price del {
+  color: gray;
+  margin-left: 8px;
+} 
+
+/*-----------------SECTION CTA---------------- */
+.container >.list-cta{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.cta-card{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 600px;
+    height: 260px;
+}
+.cta-card > .card-info{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 360;
+}
+
+.cta-card .card-title{
+    position: absolute;
+    width: 35%;
+    margin-left: 80px;
+    margin-top: 90px;
+    font-size: 30px;
+}
+
+.btn-cta{
+    position: absolute;
+    color: white;
+    margin-left: 80px;
+    margin-top: 150px;
+    text-decoration:underline;
+    font-size: 18px;
+    vertical-align: center;
+}
+
+/*-----------------FOOTER---------------- */
+
+footer > .judul{
+    padding: 24px;
+    font-size: 38px;
+    font-weight: 550;
+    margin-top: 32px;
+    background-color: #b3a5a552;
+    vertical-align: middle;
+}
+footer > .container{
+    display: flex;
+    justify-content:space-between;
+    background-color: #b3a5a552;
+    padding: 24px;
+}
+.container .title{
+    text-align: left;
+    margin-top: 0px;
+    padding-bottom: 12px;
+    font-size: 24px;
+    font-family: var(--ff-roboto);
+    font-weight: 650;
+    list-style-type: none;
+}
+
+.container > .contact{
+    width: 40%;
+}
+
+.footer-list{
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.opening > .footer-table{
+    text-align: left;
+}
+
+
+.container > .about {
+    width: 25%;
+}
+
+.container > .opening {
+    width: 30%;
+
+}
+.container > .subsribe {
+    width: 30%;
+
+}
+
+.newsletter-input{
+    margin-top: 5px;
+    width: 60%;
+    padding: 6px;
+    cursor: pointer;
+
+}
+
+.btnLetter{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/*-----------------FOOTER COPYRIGHT---------------- */
+.copyright .copy{
+    display: flex;
+    background: black;
+    padding: 8px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy .copyright-link {
+    color: rgb(131, 113, 113);
+}
+
+/*-----------------HOOVER---------------- */
+
+.btnHeader2:hover{
+    transform: scale(1.1) translateX(12px);
+}
+.navList > li :hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btnIcon:hover{
+    cursor: pointer;
+}
+
+/*-----------------POP UP REGISTRATION--------------- */
+.popUp{
+    background: rgb(219, 218, 218);
+    position: absolute;
+    top: -130%; 
+    left: 25%;
+    opacity: 0;
+    padding: 20px 30px;
+    width: 700px;
+    color: black;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+}
+.popUp.active{
+    top: 30%;
+    opacity: 1;
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+    
+}
+
+.popUp .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    
+}
+
+.popUp .judul{
+    text-align: center;
+    margin: 10px 0px 20px;
+}
+
+.popUp .form .form-element{
+    margin: 15px 0px;
+}
+
+.popUp .form .form-element label{
+    font-size: 14px;
+}
+
+.form .form-element input[type="text"],
+.form .form-element input[type="email"],
+.form .form-element input[type="number"]{
+    margin-top: 2px;
+    display: block;
+    width: 60%;
+    padding: 6px;
+    outline: none;
+    border: 0.3px black solid;
+    border-radius: 5px;
+}
+
+.form .form-element input[type="checkbox"]{
+    margin-right: 4px;
+}
+
+.popUp .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    background: black;
+    color : white ;
+
+}
